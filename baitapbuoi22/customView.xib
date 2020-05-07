@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="customView" customModule="baitapbuoi22" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jg4-IH-H6s">
+                    <rect key="frame" x="27" y="104" width="360" height="432"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Hướng dẫn rửa tay đúng cách " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cz-lw-2jN">
+                    <rect key="frame" x="27" y="44" width="360" height="70"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                    <color key="textColor" red="1" green="0.45362939070000002" blue="0.30902749950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdq-mS-ZDD">
+                    <rect key="frame" x="27" y="556" width="360" height="71"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jg4-IH-H6s" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="1kC-pU-hAJ"/>
+                <constraint firstItem="zdq-mS-ZDD" firstAttribute="top" secondItem="Jg4-IH-H6s" secondAttribute="bottom" constant="20" id="FHo-Ac-Rjz"/>
+                <constraint firstItem="Jg4-IH-H6s" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.869565" id="LPi-Lq-CTX"/>
+                <constraint firstItem="zdq-mS-ZDD" firstAttribute="width" secondItem="Jg4-IH-H6s" secondAttribute="width" id="Stk-Na-50L"/>
+                <constraint firstItem="Jg4-IH-H6s" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.482143" id="TTl-HY-aVf"/>
+                <constraint firstItem="0Cz-lw-2jN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Uux-4v-Erj"/>
+                <constraint firstItem="zdq-mS-ZDD" firstAttribute="centerX" secondItem="Jg4-IH-H6s" secondAttribute="centerX" id="Vc8-L9-cnf"/>
+                <constraint firstItem="zdq-mS-ZDD" firstAttribute="height" secondItem="Jg4-IH-H6s" secondAttribute="height" multiplier="0.164352" id="XG2-un-vUC"/>
+                <constraint firstItem="0Cz-lw-2jN" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.869565" id="pQc-Ay-liz"/>
+                <constraint firstItem="0Cz-lw-2jN" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="tSM-HX-aoq"/>
+                <constraint firstItem="0Cz-lw-2jN" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.078125" id="v01-oJ-vf0"/>
+                <constraint firstItem="Jg4-IH-H6s" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ylR-XO-Dso"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="Jg4-IH-H6s" id="BLb-iW-yTd"/>
+                <outlet property="label" destination="zdq-mS-ZDD" id="YuK-7v-aSh"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>

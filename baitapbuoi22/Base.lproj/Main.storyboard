@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="baitapbuoi22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="896" translatesAutoresizingMaskIntoConstraints="NO" id="ove-YV-mth">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="901"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DnS-zT-52e">
+                                <rect key="frame" x="161" y="688" width="101" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ove-YV-mth" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-2.5" id="NXR-Nt-txo"/>
+                            <constraint firstItem="ove-YV-mth" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1.00558" id="Q5H-h4-fqf"/>
+                            <constraint firstItem="ove-YV-mth" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fg6-ck-Rz9"/>
+                            <constraint firstItem="ove-YV-mth" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="vOG-7h-T3f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pagecontrol" destination="DnS-zT-52e" id="TLQ-BA-lD4"/>
+                        <outlet property="scroll" destination="ove-YV-mth" id="6cV-eh-7qT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439.13043478260875" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>
